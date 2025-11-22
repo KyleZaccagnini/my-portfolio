@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rubik-spray-paint-regular {
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.finger-paint-regular {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Supernova";
+    src: url("../fonts/Supernova\ -\ Personal\ Used.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "Finger Paint", sans-serif;
+}
+
+.header-img {
+    max-width: 100%;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    align-items: start;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: 100px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-splat-red {
+    font-size: 5px;
+    position: relative;
+    max-width: 40px;
+    text-align: center;
+    top: 55px;
+    left: 11px;
+}
+
+.nav-splat-yel {
+    font-size: 7px;
+    position: relative;
+    max-width: 40px;
+    text-align: center;
+    top: 62px;
+    left: 30px;
+}
+
+.nav-splat-blu {
+    font-size: 7px;
+    position: relative;
+    max-width: 40px;
+    text-align: center;
+    top: 48px;
+    left: 12px;
+}
+
+.nav-splat-pin {
+    font-size: 5px;
+    position: relative;
+    max-width: 40px;
+    text-align: center;
+    top: 42px;
+    left: 20px;
+}
+
+.nav-splat-gre {
+    font-size: 6px;
+    position: relative;
+    max-width: 40px;
+    text-align: center;
+    top: 37px;
+    left: 15px;
+}
+
+.nav-splat-pur {
+    font-size: 7px;
+    position: relative;
+    max-width: 20px;
+    text-align: center;
+    top: 43px;
+    left: 24px;
+}
+
+.title-splat-red {
+    position: relative;
+    font-size: 7.5px;
+    color: white;
+    right: -20px;
+    top: 85px;
+    max-width: 60px;
+    text-align: center;
+}
+
+.title-splat-yel {
+    position: relative;
+    font-size: 9px;
+    color: white;
+    right: -40px;
+    top: 82px;
+    max-width: 50px;
+    text-align: center;
+}
+
+.title-splat-blu {
+    position: relative;
+    font-size: 10px;
+    color: white;
+    right: -28px;
+    top: 70px;
+    max-width: 40px;
+    text-align: center;
+}
+
+.title-splat-pin {
+    position: relative;
+    font-size: 8px;
+    color: white;
+    right: -32px;
+    top: 60px;
+}
+
+.title-splat-gre {
+    position: relative;
+    font-size: 9px;
+    color: white;
+    right: -20px;
+    top: 50px;
+}
+
+.title-splat-pur {
+    position: relative;
+    font-size: 10px;
+    color: white;
+    right: -40px;
+    top: 68px;
+    max-width: 30px;
+    text-align: center;
+}
+
+
+.body {
+    display: flex;
+    border: 2px solid white;
+}
+
+.sidebar1 {
+    width: 375px;
+    border: 2px solid white;
+
+}
+
+.mainbox {
+    width: 1170px;
+}
+
+.sidebar2 {
+    width: 375px;
+    border: 2px solid white;
+}
+
+#title-img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+#title-splats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    position: absolute;
+    left: 46%;   /* middle of the screen */
+    top: 55%;
+    transform: translate(-43%, -55%);
+}
+
+#title-text {
+    position: absolute;
+    left: 46%;   /* middle of the screen */
+    top: 40%;
+    transform: translate(-43%, -60%);
+    font-size: 80px;
+    white-space: nowrap;
+    color: white;
+}
+
+#home-text-red {
+    color: white;
+    font-size: 18px;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 40px;
+}
+
+#home-text-yel {
+    color: white;
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    top:185px;
+    left: 73px;
+}
+
+#home-text-blu {
+    color: white;
+    font-size: 24px;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: 40px;
+}
+
+#home-text-pin {
+    color: white;
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    top: 160px;
+    left: 76px;
+}
+
+#home-text-gre {
+    color: white;
+    font-size: 24px;
+    max-width: 200px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    left: 33px;
+}
+
+#home-text-pur {
+    color: white;
+    font-size: 30px;
+    max-width: 130px;
+    text-align: center;
+    position: relative;
+    top: 190px;
+    left: 85px;
+}
+
+#professional-work {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#graphic-design {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#motion-design {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#videography {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#photography {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-me {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+footer {
+    max-width: 100%;
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 100px;
+}
+
+#foot {
+    max-width: 100%;
+    height: 120px;
+    position: absolute;
+    overflow: hidden;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    max-height: 150px;
+    position: relative;
+}
+
+.text-link {
+    color: white;
+    text-decoration: none;
+}
+
+.text-link::after {
+    color: white;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.20);   /* grow */
+}
+
+.main-box {
+    display: flex;
+    height: 700px;
+    width: 1400px;
+    margin-top: 50px;
+    gap: 40px;
+
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.left-box h1 {
+    font-size: 70px;
+}
+
+.left-box h2 {
+    font-size: 20px;
+}
+
+.right-box {
+    flex: 1;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 500px;
+    height: 540px;
+    position: relative;
+    z-index: 5;
+    margin-top: -605px;
+    margin-left: 170px;
+    overflow: auto;
+}
+
+.content img {
+    border-radius: 15px;
+}
+
+#prof-title {
+    color: #ef4b4b;
+}
+
+#graphic-title {
+    color: #f2a444;
+}
+
+#motion-title {
+    color: #495aa8;
+}
+
+#video-title {
+    color: #ec187d;
+}
+
+#photo-title {
+    color: #33b24d;
+}
+
+#about-title {
+    color: #b35ba4;
+}
+
+#img-pur {
+    position: absolute;
+    right: 110px;
+    top: 58px;
+    border-radius: 20px;
+}
+
+#pu-img {
+   position: relative;
+}
+
+#img-yel {
+    position: absolute;
+    right: 85px;
+    top: 100px;
+    border-radius: 20px;
+}
+
+#yel-img {
+   position: relative;
+}
+
+#img-gre {
+    position: absolute;
+    right: 100px;
+    top: 90px;
+    border-radius: 20px;
+}
+
+#gre-img {
+   position: relative;
+}
+
+#vid-pin {
+    width: 320px;
+    position: absolute;
+    right: 200px;
+    top: 95px;
+}
+
+#div-pin {
+    position: relative;
+}
+
+#vid-blu {
+    width: 320px;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+}
+
+#div-blu {
+    position: relative;
+}
+
+#vid-red {
+    width: 320px;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+}
+
+#div-red {
+    position: relative;
+}
+
+#me {
+    position: relative;
+    left: 50px;
+}
+
+#diverse {
+    position: relative;
+    left: 100px;
+}
+
+#tame {
+    position: relative;
+    left: 100px;
+}
+
+#nautical {
+    text-align: center;
+}
+
+#sketch {
+    position: relative;
+    left: 150px;
+}
+
+.content img {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    display: none;                
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);  /* dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 0px;
+    box-shadow: 0 0 25px black;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-container-vert {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+#spl {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery {
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 40s infinite linear;
+    padding-right: 1em;
+}
+
+.card {
+    flex: 0 0 5em;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
